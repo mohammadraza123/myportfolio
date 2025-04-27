@@ -23,7 +23,7 @@ const greeting = {
   username: "Mohammad Raza",
   title: "Hi, it's Mohammad Raza",
   subTitle: emoji(
-    "A passionate Frontend Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs ."
+    "A passionate Full-Stack Developer with 2+ years of hands-on experience in building and scaling modern web applications from the ground up. I specialize in both frontend and backend development, user-focused solutions that are fast, and scalable.A problem-solver at heart ❤️."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1I9wxE4XVw4sUTP5xSofXCrxTE03YhreD/view?usp=sharing", // Set to empty to hide the button
@@ -43,13 +43,16 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FRONTEND DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Develop highly interactive Frontend / User Interfaces for web and mobile applications."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase")
+    emoji("⚡ Build powerful, scalable Backend APIs and server-side logic using modern technologies."),
+    emoji("⚡ Create Progressive Web Applications (PWA) with Single Page Application (SPA) architecture."),
+    emoji("⚡  Seamless integration of third-party services like Firebase, Stripe, Cloudinary, and more."),
+    emoji("⚡ Passionate about delivering high-quality, performance-optimized full stack solutions."),
+
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -57,29 +60,44 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "Html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "Css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "Sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fas fa-code" // Instead of fa-t, use 'code' icon
+
     },
     {
       skillName: "Reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
+      skillName: "Next.js",
+      fontAwesomeClassname: "fas fa-code" // Instead of fa-t, use 'code' icon
+    },
+    {
+      skillName: "React Native",
+      fontAwesomeClassname: "fab fa-react"
+    },
+    {
+      skillName: "Node.js",
+      fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "Express.js",
+      fontAwesomeClassname: "fas fa-server"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-database" // No official MongoDB FontAwesome icon, using database icon
+    },
+    {
       skillName: "Firebase",
       fontAwesomeClassname: "fas fa-fire"
     }
+    
+    
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -108,12 +126,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend (React)", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
+      Stack: "Frontend", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Backend",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Mobile Apps (React Native)",
+      progressPercentage: "76%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -128,22 +150,36 @@ const workExperiences = {
       role: "JavaScript Developer",
       company: "IT Panda",
       companylogo: require("./assets/images/itpanda.jpg"),
-      date: "June 2023 – October 2023",
+      date: "May 2023 – January 2024",
       descBullets: [
-        "Completed a 4-month internship at IT Panda, focusing on frontend development using JavaScript and React.",
-        "Worked on diverse projects, contributing to real-world web development solutions.",
-        "Enhanced web development skills and gained hands-on experience with modern technologies."
+        "Built interactive web applications using React.js and modern JavaScript frameworks, focusing on performance and scalability.",
+        "Wrote clean, efficient, and ES6+ standard code to develop fast and responsive websites.",
+        "Enhanced UI interactivity, functionality, and user experience by leveraging core JavaScript skills and best practices.",
+        "Collaborated in agile development teams, delivering real-world web solutions aligned with project requirements."
       ]
     },
     {
       role: "Reactjs Developer",
       company: "Rayon Studios",
       companylogo: require("./assets/images/rayon.png"),
-      date: "December 2023 – Present",
+      date: "March 2024 – December 2025",
       descBullets: [
-        "Individually designed and developed complete websites with a focus on mobile responsiveness.",
-        "Built and implemented core functionalities and application logic using React and JavaScript.",
-        "Gained practical experience as a Junior React/JavaScript Developer, contributing to seamless user experiences."
+        "Built responsive and dynamic web applications using React.js, focusing on performance, scalability, and clean architecture.",
+        "Designed and developed reusable components to ensure maintainability and efficient UI development.",
+        "Worked with Backend development using Node.js, Express.js, and MongoDB to build RESTful APIs and server-side logic.",
+        "Implemented responsive designs across devices, improving user experience and interface consistency."
+      ]
+    },
+    {
+      role: "Full Stack Developer",
+      company: "Digital Bee Studio",
+      companylogo: require("./assets/images/digital_bee_studio_logo.jpg"),
+      date: "January 2025 – Present",
+      descBullets: [
+        "Developed responsive and dynamic frontend applications using React.js, focusing on reusable components and optimized performance.",
+        "Built and maintained backend services with Node.js, Express.js, and MongoDB, creating secure and scalable RESTful APIs.",
+        "Integrated frontend and backend systems to deliver complete, high-performance full-stack web applications.",
+        "Optimized application performance and improved scalability through best practices in full stack development."
       ]
     }
   ]
@@ -163,7 +199,33 @@ const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME OF THE PROJECTS OF MY CAREER",
   projects: [
-   
+    {
+      image: require("./assets/images/emporia.png"),
+      projectName: "Crystal Emporia (E-commerce)",
+
+      projectDesc: [
+        {
+          description:
+            "I created the Crystal Emporia (E-commerce) project using React, Node.js, Express.js, and MongoDB. This project involved building a real client live website with a fully functional backend and dynamic product management."
+        },
+        {
+          description:
+            "Integrated user authentication with Firebase and JWT, managed global state with Redux, and implemented protected routes for secure navigation between pages."
+        },
+        {
+          description:
+            "The project includes features like product search, filtering, add to cart, wishlist, checkout system, and order placement with secure API integrations."
+        }
+      ],
+
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://crystalemporia.com/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
     {
       image: require("./assets/images/olx.png"),
       projectName: "Olx (CLone)",
@@ -179,7 +241,7 @@ const bigProjects = {
         },
         {
           description:
-            "The project is available on GitHub, showcasing my ability to build a full-stack web application with modern tools."
+            "The project demonstrates building a full-stack responsive marketplace application with real-time data handling and authentication features."
         }
       ],
 
@@ -212,36 +274,36 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://olx-ecommerce.vercel.app/"
+          url: "https://raza-turo-website.netlify.app/"
         }
         //  you can add extra buttons here.
       ]
     },
-    {
-      image: require("./assets/images/weather.png"),
-      projectName: "Weather App",
+    // {
+    //   image: require("./assets/images/weather.png"),
+    //   projectName: "Weather App",
 
-      projectDesc: [
-        {
-          description:
-            "Designed and built a user-friendly interface for real-time weather updates."
-        },
-        {
-          description:
-            "Utilized weather APIs to fetch and display current weather data for cities and countries worldwide."
-        },
-        {
-          description:
-            "Implemented responsive design and seamless API integration for accurate and quick weather insights."
-        }
-      ],
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://weather-app-raza.netlify.app/"
-        }
-      ]
-    }
+    //   projectDesc: [
+    //     {
+    //       description:
+    //         "Designed and built a user-friendly interface for real-time weather updates."
+    //     },
+    //     {
+    //       description:
+    //         "Utilized weather APIs to fetch and display current weather data for cities and countries worldwide."
+    //     },
+    //     {
+    //       description:
+    //         "Implemented responsive design and seamless API integration for accurate and quick weather insights."
+    //     }
+    //   ],
+    //   footerLink: [
+    //     {
+    //       name: "Visit Website",
+    //       url: "https://weather-app-raza.netlify.app/"
+    //     }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
