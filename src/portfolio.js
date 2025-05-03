@@ -23,7 +23,7 @@ const greeting = {
   username: "Mohammad Raza",
   title: "Hi, it's Mohammad Raza",
   subTitle: emoji(
-    "A passionate Full-Stack Developer with 2+ years of hands-on experience in building and scaling modern web applications from the ground up. I specialize in both frontend and backend development, user-focused solutions that are fast, and scalable.A problem-solver at heart ❤️."
+    "A passionate Mern-Stack Developer with 2+ years of hands-on experience in building and scaling modern web applications from the ground up. I specialize in both frontend and backend development, user-focused solutions that are fast, and scalable.A problem-solver at heart ❤️."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1I9wxE4XVw4sUTP5xSofXCrxTE03YhreD/view?usp=sharing", // Set to empty to hide the button
@@ -43,7 +43,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY MERN STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
       "⚡ Develop highly interactive Frontend / User Interfaces for web and mobile applications."
@@ -55,50 +55,45 @@ const skillsSection = {
 
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [
     {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      imageSrc: require("./assets/images/js.png"), // or use a URL
     },
     {
       skillName: "TypeScript",
-      fontAwesomeClassname: "fas fa-code" // Instead of fa-t, use 'code' icon
-
+      imageSrc: require("./assets/images/ts.png"),
     },
     {
       skillName: "Reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      imageSrc: require("./assets/images/react.png"),
     },
     {
-      skillName: "Next.js",
-      fontAwesomeClassname: "fas fa-code" // Instead of fa-t, use 'code' icon
+      skillName: "Nextjs",
+      imageSrc: require("./assets/images/next.png"),
     },
     {
       skillName: "React Native",
-      fontAwesomeClassname: "fab fa-react"
+      imageSrc: require("./assets/images/react.png"),
     },
     {
-      skillName: "Node.js",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Expressjs",
+      imageSrc: require("./assets/images/express1.png"),
     },
     {
-      skillName: "Express.js",
-      fontAwesomeClassname: "fas fa-server"
+      skillName: "Nodejs",
+      imageSrc: require("./assets/images/node.png"),
     },
     {
       skillName: "MongoDB",
-      fontAwesomeClassname: "fas fa-database" // No official MongoDB FontAwesome icon, using database icon
+      imageSrc: require("./assets/images/mongodb.png"),
     },
     {
       skillName: "Firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    }
-    
-    
+      imageSrc: require("./assets/images/firebase.png"),
+    },
   ],
+  
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -171,7 +166,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Full Stack Developer",
+      role: "Mern Stack Developer",
       company: "Digital Bee Studio",
       companylogo: require("./assets/images/digital_bee_studio_logo.jpg"),
       date: "January 2025 – Present",
@@ -200,113 +195,117 @@ const bigProjects = {
   subtitle: "SOME OF THE PROJECTS OF MY CAREER",
   projects: [
     {
-      image: require("./assets/images/emporia.png"),
-      projectName: "Crystal Emporia (E-commerce)",
-
+      // image: require("./assets/images/boorowbe.png"),
+      projectName: "Borrowbe",
+      images: [
+        require("./assets/images/borrowbe-1.png"),
+        require("./assets/images/borrowbe-2.png"),
+        require("./assets/images/borrowbe-3.png"),
+      ], // Add multiple images here
       projectDesc: [
         {
           description:
-            "I created the Crystal Emporia (E-commerce) project using React, Node.js, Express.js, and MongoDB. This project involved building a real client live website with a fully functional backend and dynamic product management."
+            "BorrowBe is an online marketplace that enables users to rent out or lease products, services, and spaces..."
         },
         {
           description:
-            "Integrated user authentication with Firebase and JWT, managed global state with Redux, and implemented protected routes for secure navigation between pages."
+          <>
+          <strong>Tech Stack:</strong> NextJS, Redux, Firebase, Node.js, Express.js, MongoDB, Tailwind CSS
+        </>
         },
         {
-          description:
-            "The project includes features like product search, filtering, add to cart, wishlist, checkout system, and order placement with secure API integrations."
-        }
+          description: "Free ad posting for rental listings"
+        },
+        {
+          description: "Category-wise browsing (real estate, vehicles, services, etc.)"
+        },
+        {
+          description: "Real-time chat functionality between renters and providers"
+        },
+        {
+          description: "Secure backend with Express.js and MongoDB for listing and transaction management"
+        },
       ],
-
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://borrowbe.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/emporia.png"),
+      projectName: "Crystal Emporia (E-commerce)",
+      images: [
+        require("./assets/images/emporia-1.png"),
+        require("./assets/images/emporia-2.png"),
+        require("./assets/images/emporia-3.png"),
+      ], // Add multiple images here
+      projectDesc: [
+        {
+          description:
+            "Crystal Emporia is a fully functional e-commerce platform. It provides a seamless shopping experience..."
+        },
+        {
+          description:
+          <>
+          <strong>Tech Stack:</strong> ReactJS, Redux, Node.js, Express.js, MongoDB, Firebase, Tailwind CSS
+        </>
+        },
+        {
+          description:
+            "I created the platform using a modern MERN stack architecture (MongoDB, Express.js, React, Node.js)..."
+        },
+        {
+          description:
+            "Implemented advanced features including product search, category filtering, cart and wishlist management..."
+        },
+      ],
       footerLink: [
         {
           name: "Visit Website",
           url: "https://crystalemporia.com/"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
       image: require("./assets/images/olx.png"),
-      projectName: "Olx (CLone)",
-
+      projectName: "Olx Project",
+      images: [
+        require("./assets/images/olx-1.png"),
+        require("./assets/images/olx-2.png"),
+        require("./assets/images/olx-3.png"),
+      ], // Add multiple images here
       projectDesc: [
         {
           description:
-            "I created an OLX Clone project using React, Firebase, Redux, and React Router. This project involved integrating Firebase for user authentication and data storage."
+            "I created an OLX Clone project using React, Firebase, Redux, and React Router. This project involved..."
         },
         {
           description:
-            "Managed global state with Redux and implemented dynamic routing for smooth navigation between different pages."
+          <>
+            <strong>Tech Stack:</strong> ReactJS, Redux, Firebase, React Router, Tailwind CSS
+          </>
+        },
+        {
+          description: "Managed global state with Redux and implemented dynamic routing for smooth navigation..."
         },
         {
           description:
-            "The project demonstrates building a full-stack responsive marketplace application with real-time data handling and authentication features."
-        }
+            "The project demonstrates building a full-stack responsive marketplace application..."
+        },
       ],
-
       footerLink: [
         {
           name: "Visit Website",
           url: "https://olx-ecommerce.vercel.app/"
         }
-        //  you can add extra buttons here.
       ]
-    },
-    {
-      image: require("./assets/images/turo.png"),
-      projectName: "Turo Website",
-
-      projectDesc: [
-        {
-          description:
-            "Developed a Turo website clone using React, replicating the core functionality and user interface of the platform."
-        },
-        {
-          description:
-            "Ensured full responsiveness for mobile devices, optimizing the user experience across different screen sizes."
-        },
-        {
-          description:
-            "Utilized React and Ant Design (AntD) for building modern, clean, and responsive UI components."
-        }
-      ],
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "https://raza-turo-website.netlify.app/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    // {
-    //   image: require("./assets/images/weather.png"),
-    //   projectName: "Weather App",
-
-    //   projectDesc: [
-    //     {
-    //       description:
-    //         "Designed and built a user-friendly interface for real-time weather updates."
-    //     },
-    //     {
-    //       description:
-    //         "Utilized weather APIs to fetch and display current weather data for cities and countries worldwide."
-    //     },
-    //     {
-    //       description:
-    //         "Implemented responsive design and seamless API integration for accurate and quick weather insights."
-    //     }
-    //   ],
-    //   footerLink: [
-    //     {
-    //       name: "Visit Website",
-    //       url: "https://weather-app-raza.netlify.app/"
-    //     }
-    //   ]
-    // }
+    }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
@@ -321,7 +320,7 @@ const achievementSection = {
   //     title: "Google Code-In Finalist",
   //     subtitle:
   //       "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-  //     image: require("./assets/images/codeInLogo.webp"),
+  //     image: require("./assets/images/codeInLoo.webp"),
   //     imageAlt: "Google Code-In Logo",
   //     footerLink: [
   //       {
