@@ -46,7 +46,7 @@ const skillsSection = {
   subTitle: "CRAZY MERN STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Frontend / User Interfaces for web and mobile applications."
+      "⚡ Develop highly interactive Frontend / User Interfaces for Web."
     ),
     emoji("⚡ Build powerful, scalable Backend APIs and server-side logic using modern technologies."),
     emoji("⚡ Create Progressive Web Applications (PWA) with Single Page Application (SPA) architecture."),
@@ -56,6 +56,10 @@ const skillsSection = {
   ],
 
   softwareSkills: [
+    {
+      skillName: "HTML / CSS",
+      imageSrc: require("./assets/images/html-css.png"), // or use a URL
+    },
     {
       skillName: "JavaScript",
       imageSrc: require("./assets/images/js.png"), // or use a URL
@@ -73,10 +77,6 @@ const skillsSection = {
       imageSrc: require("./assets/images/next.png"),
     },
     {
-      skillName: "React Native",
-      imageSrc: require("./assets/images/react.png"),
-    },
-    {
       skillName: "Expressjs",
       imageSrc: require("./assets/images/express1.png"),
     },
@@ -92,6 +92,18 @@ const skillsSection = {
       skillName: "Firebase",
       imageSrc: require("./assets/images/firebase.png"),
     },
+    {
+      skillName: "Tailwind Css",
+      imageSrc: require("./assets/images/tailwind.png"),
+    },
+    {
+      skillName: "Ant Design",
+      imageSrc: require("./assets/images/ant-design.png"),
+    },
+    {
+      skillName: "Bootstrap",
+      imageSrc: require("./assets/images/bootstrap.jpg"),
+    },
   ],
   
   display: true // Set false to hide this section, defaults to true
@@ -103,15 +115,28 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Intermediate",
-      logo: require("./assets/images/college.jpg"),
-      subHeader: "In Computer Science",
-      duration: "2023",
+      schoolName: "Ilma University",
+      logo: require("./assets/images/Ilmaunilogo.png"),
+      subHeader: "BSSE",
+      duration: "(Undergraduate)",
+
       descBullets: [
-        "Gained foundational knowledge in programming, algorithms, and data structures.",
-        "Hands-on experience with problem-solving, software development, and computer systems."
+        "Building a strong foundation in programming, data structures, and algorithms",
+        "Gaining hands-on experience in software development and problem-solving",
+        "Working on academic projects to simulate real-world software engineering tasks",
+        "Learning about computer systems, object-oriented programming, and database design"
       ]
-    }
+    },
+    // {
+    //   schoolName: "Intermediate",
+    //   logo: require("./assets/images/college.jpg"),
+    //   subHeader: "In Computer Science",
+    //   duration: "2023",
+    //   descBullets: [
+    //     "Gained foundational knowledge in programming, algorithms, and data structures.",
+    //     "Hands-on experience with problem-solving, software development, and computer systems."
+    //   ]
+    // },
   ]
 };
 
@@ -127,10 +152,6 @@ const techStack = {
     {
       Stack: "Backend",
       progressPercentage: "70%"
-    },
-    {
-      Stack: "Mobile Apps (React Native)",
-      progressPercentage: "76%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -142,15 +163,15 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "JavaScript Developer",
-      company: "IT Panda",
-      companylogo: require("./assets/images/itpanda.jpg"),
-      date: "May 2023 – January 2024",
+      role: "Mern Stack Developer",
+      company: "Digital Bee Studio",
+      companylogo: require("./assets/images/digital_bee_studio_logo.jpg"),
+      date: "January 2025 – Present",
       descBullets: [
-        "Built interactive web applications using React.js and modern JavaScript frameworks, focusing on performance and scalability.",
-        "Wrote clean, efficient, and ES6+ standard code to develop fast and responsive websites.",
-        "Enhanced UI interactivity, functionality, and user experience by leveraging core JavaScript skills and best practices.",
-        "Collaborated in agile development teams, delivering real-world web solutions aligned with project requirements."
+        "Developed responsive and dynamic frontend applications using React.js, focusing on reusable components and optimized performance.",
+        "Built and maintained backend services with Node.js, Express.js, and MongoDB, creating secure and scalable RESTful APIs.",
+        "Integrated frontend and backend systems to deliver complete, high-performance full-stack web applications.",
+        "Optimized application performance and improved scalability through best practices in full stack development."
       ]
     },
     {
@@ -166,17 +187,18 @@ const workExperiences = {
       ]
     },
     {
-      role: "Mern Stack Developer",
-      company: "Digital Bee Studio",
-      companylogo: require("./assets/images/digital_bee_studio_logo.jpg"),
-      date: "January 2025 – Present",
+      role: "JavaScript Developer",
+      company: "IT Panda",
+      companylogo: require("./assets/images/itpanda.jpg"),
+      date: "May 2023 – January 2024",
       descBullets: [
-        "Developed responsive and dynamic frontend applications using React.js, focusing on reusable components and optimized performance.",
-        "Built and maintained backend services with Node.js, Express.js, and MongoDB, creating secure and scalable RESTful APIs.",
-        "Integrated frontend and backend systems to deliver complete, high-performance full-stack web applications.",
-        "Optimized application performance and improved scalability through best practices in full stack development."
+        "Built interactive web applications using React.js and modern JavaScript frameworks, focusing on performance and scalability.",
+        "Wrote clean, efficient, and ES6+ standard code to develop fast and responsive websites.",
+        "Enhanced UI interactivity, functionality, and user experience by leveraging core JavaScript skills and best practices.",
+        "Collaborated in agile development teams, delivering real-world web solutions aligned with project requirements."
       ]
-    }
+    },
+    
   ]
 };
 
